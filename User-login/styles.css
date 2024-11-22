@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    width: 100%;
+    height: 800px;
+    background-image: url(assets/Fondo.png);
+    background-position:center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    width: 33%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(233, 233, 233);
+    border-radius: 20px;
+    box-shadow: 0 0 20px 5px black;
+}
+.title{
+    width: 100%;
+    text-align: center;
+    height: 40%;
+    background: linear-gradient(to bottom, #411c79,#43b5ee);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    border-radius: 19px 19px 0 0 ;
+}
+.title h1{
+    font-size: 48px;
+    margin-top: 30px;
+}
+.title p{
+    font-size: 18px;
+    padding: 20px 0;
+    width: 70%;
+}
+.user-login{
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    width: 60%;
+}
+.container-user{
+    display: flex;
+    background-color: #97e7f584;
+    height: 30px;
+    padding: 5px 10px;
+    gap: 10px;
+    border-radius: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+.password{
+    display: flex;
+    background-color: #97e7f584;
+    height: 30px;
+    padding: 5px 10px;
+    gap: 10px;
+    border-radius: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+.remember{
+    display: flex;
+    font-size: 16px;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    margin-top: 10px;
+}
+.container-user input{
+    width: 300px;
+}
+.password input{
+    width: 300px;
+}
+input{
+    outline: none;
+    border: none;
+    background: none;
+}
+input::placeholder{
+    color: white;
+}
+i{
+    color: rgb(255, 255, 255);
+}
+.submit{
+    margin-top: 60px;
+}
+.submit button{
+    border-radius: 20px;
+    background: linear-gradient(to right, #0e2b6a,#6490ff);
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
