@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    width: 100%;
+    height: 750px;
+    background-image: url(assets/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 10, 52, 0.66);
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: center;
+}     
+.Contact{
+    width: 30%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.address-container{
+    display: flex;
+    justify-content: initial;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    gap: 15px;
+}
+.icon{
+    color: white;
+    font-size: 30px;
+}
+.address{
+    color: white;
+}
+.phone-container{
+    display: flex;
+    justify-content: initial;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    gap: 15px;
+}
+.phone{
+    color: white;
+}
+.email-container{
+    display: flex;
+    justify-content: initial;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    gap: 15px;
+}
+.email{
+    color: white;
+}
+.message{
+    width: 33%;
+    height: 750px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+form{
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    padding: 50px;
+    gap: 40px;
+}
+form h1{
+    text-align: center;
+    padding: 30px 0;
+    color: rgb(12, 223, 65);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+form input{
+    padding: 5px 0;
+    border: none;
+    border-bottom: 1px solid rgb(168, 168, 168);
+}
+input:focus{
+    outline: none;
+}
+form textarea{
+    height: 100px;
+    border: none;
+    border-bottom: 2px solid rgb(168, 168, 168) ;
+}
+textarea:focus{
+    outline: none;
+}
+form  button{
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(12, 223, 65);
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    letter-spacing: 5px;
+}
