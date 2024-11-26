@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+main{
+    width: 100%;
+    height: 890px;
+    display: flex;
+}
+.barra-izquierda{
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid #d0cfcf;
+}
+.logo{
+    width: 50%;
+    margin-left: 20px;
+}
+.logo img{
+    width: 100%;
+    height: 70px;
+    object-fit: cover;
+}
+.perfil{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf,#4f5bd5);
+}
+.imagen img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+.seguidores{
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.P{
+    font-size: 15px;
+    color: #292828;
+}
+.navegacion{
+    width: 100%;
+    margin-top: 20px;
+}
+.nav-bar ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+li a{
+    color: #6c6c6c;
+    padding: 0 0 0 50px;
+    transition: color 0.5s ease-in-out;
+    font-size: 17px;
+}
+i{
+    width: 25px;
+}
+li a:hover{
+    color: rgb(255, 0, 68);
+    border-left: 5px solid rgb(255, 0, 68);
+}
+hr{
+    margin: 20px 0;
+}
+/* Pantalla-principal */
+.Pantalla-principal{
+    width: 60%;
+}
+input{
+    border: none;
+    background: none;
+}
+input:focus{
+    outline: none;
+}
+.container-sup{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.buscador{
+    width: 50%;
+    display: flex;
+    background-color: #e9e8e8;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid;
+}
+.lupa{
+    color: rgb(121, 121, 121);
+}
+.buscador input{
+    width: 90%;
+}
+.busqueda-voz{
+    margin-left: 10px;
+}
+.barra-superior{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border-bottom:1px solid #d0cfcf;
+}
+.container-principal{
+    background-color: #f5f4f4;
+    width: 100%;
+}
+.nueva-publicacion{
+    padding: 10px;
+   background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf,#4f5bd5);;
+   border-radius: 20px;
+   color: white;
+}
+.container-principal{
+    padding: 20px 0 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Historias{
+    width: 80%;
+}
+.opciones{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.imagenes{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf,#4f5bd5);  
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.contenedor-imagenes{
+    width: 100px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imagenes .plus{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.plus{
+    font-size: 35px;
+}
+.plus i{
+    width: 30px;
+    height: 30px;
+}
+.imagenes img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.historia{
+    margin-top: 20px;
+    display: flex;
+    gap: 25px;
+}
+.feed-principal{
+    width: 80%;
+    margin-top: 20px;
+}
+.eleccion{
+    display: flex;
+    gap: 20px;
+}
+.eleccion button{
+    padding: 0 10px;
+    border-radius: 20px;
+    border: 1px solid;
+}
+.Feeds{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.user{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.op{
+    font-size: 30px;
+}
+.img{
+    width: 60px;
+    height: 60px;
+}
+.img img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.Feed{
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.image{
+    width: 100%;
+    padding: 10px 0;
+}
+.image img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.reacciones{
+    display: flex;
+    justify-content: space-between;
+}
+.coment-image{
+    width: 50px;
+    height: 50px;
+}
+.comentario{
+    padding: 10px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.coment-image img{
+    width: 100%;
+    border-radius: 50%;
+}
+.comentario-content{
+    width: 90%;
+    display: flex;
+    background-color: #e2e2e2;
+    padding: 10px 5px;
+    border-radius: 20px;
+}
+.comentario-content input{
+    width: 80%;
+}
+.descripcion{
+    padding: 10px 0;
+}
+/* Barra lateral derecha */
+.barra-derecha{
+    width: 20%;
+    border-left:1px solid #d0cfcf;
+}
+.derecha-superior{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid #d0cfcf;
+}
+.Trending{
+    margin: 10px 0 0 20px;
+}
+.treading-image{
+    margin-top:10px;
+    width: 90%;
+    display: flex;
+    gap: 15px;
+}
+.treading-image img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.Suggestions{
+    margin: 10px 0 0 20px;
+}
+.Suggestions h2{
+    padding: 10px 0;
+}
+.user-info-suggestion{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.user-info-suggestion .img img{
+    width: 100%;
+    height: 100%;
+}
+.final{
+    margin: 10px 0 0 20px;
+}
+.final p a{
+    color: red;
+    border-bottom:1px solid red ;
+}
