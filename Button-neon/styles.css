@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    width: 100%;
+    height: 800px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    width: 250px;
+    height: 60px;
+    border: none;
+    background-color: cyan;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+    border-radius: 10px;
+    transition: 0.5s;
+    font-size: 18px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+button:hover{
+    box-shadow: 0 0 5px cyan, 
+    0 0 25px cyan, 0 0 50px cyan, 
+    0 0 100px cyan, 0 0 200px cyan;
+}
