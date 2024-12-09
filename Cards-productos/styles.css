@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+main{
+    width: 100%;
+    height: 703px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(115, 22, 255), rgb(0, 115, 255));
+}
+h1{
+    font-size: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 5px;
+    color: rgb(0, 11, 57);
+}
+.container-card{
+    width: 100%;
+    height: 403px;
+    display: flex;
+    justify-content: space-around; 
+}
+.card{
+    width: 25%;
+    height: 250px;
+    display: flex;
+    position: relative;
+    border-radius: 10px;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    display: flex;
+    justify-content: center;
+}
+.image img{
+    width: 90%;
+    height: 100%;
+    object-fit: contain;
+}
+.text{
+    padding: 10px;
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.card:hover .text{
+    opacity: 1;
+}
+.card:hover .image{
+    transform: translate(-90px , 10px) scale(1.1);
+}
+.text-p{
+    width: 45%;
+    text-align: end;
+}
+strong{
+    font-size: 35px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}p{
+    margin: 5px 0;
+    text-align: end;
+    font-size: 20px;
+    color: rgb(231, 231, 231);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+button{
+    margin: 70px 0 0 50px;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.uno{
+    background-color: #800E1F;  
+}
+.dos{
+    background-color: #8C4A2F;
+}
+.tres{
+    background-color: #1B4D3E;
+}
