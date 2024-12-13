@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    height: 703px;
+    background-image: url(assets/business-7607421.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.712);
+    background-blend-mode: overlay;
+    font-family:'Times New Roman', Times, serif;
+}
+.title{
+    font-size: 35px;
+    color: white;
+}
+.nav-bar{
+    display: flex;
+    padding: 0 100px;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+.options{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.options li a{
+    color: white;
+    font-size: 20px;
+}
+.presentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 643px;
+    align-items: center;
+}
+.p-title{
+    font-size: 60px;
+    letter-spacing: 10px;
+    color: white;
+}
+.p-presentation{
+    font-size: 60px;
+    letter-spacing: 10px;
+    color: white;
+}
+.p-presentation span{
+    color: rgb(232, 189, 110);
+}
+.buttons{
+    margin-top: 30px;
+    display: flex;
+    gap: 50px;
+}
+.buttons button{
+    width: 110px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid white;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-family:'Times New Roman', Times, serif;
+}

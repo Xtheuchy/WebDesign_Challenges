@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0 50px;
+}
+.nav-bar{
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+li,a{
+    list-style: none;
+    text-decoration: none;
+}
+.title{
+    font-size: 28px;
+}
+.nav-bar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.nav-bar ul li{
+    font-size: 18px;
+}
+.nav-bar ul li a{
+    color: black;
+}
+.nav-bar .boton{
+    font-size: 18px;
+    width: 120px;
+    border-radius: 15px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+.encabezado{
+    height: 703px;
+    position: relative;
+}
+.text{
+    height: 560px;
+    border-radius: 20px;
+    background: linear-gradient( rgb(55, 255, 112),rgb(117, 255, 230));
+    display: flex;
+}
+.text-1{
+    width: 50%;
+    padding: 0 0 0 50px;
+}
+.text-1 h1{
+    font-size: 60px;
+    letter-spacing: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.text-1 p{
+    font-size: 17px;
+    line-height: 25px;
+}
+.image{
+    width: 35%;
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+}
+.image img{
+    width: 90%;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.botones{
+    display: flex;
+    gap: 30px;
+}
+.botones button{
+    padding: 15px 25px;
+    background: none;
+    border: 2px solid black;
+    border-radius: 25px;
+    transition: 0.5s ease-in-out;
+}
+.botones button:hover{
+    background: black;
+    color: white;
+}
