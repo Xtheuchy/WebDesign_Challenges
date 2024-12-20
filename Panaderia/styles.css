@@ -1,0 +1,93 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0 70px ;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+.title{
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.5s;
+}
+nav ul li a:hover{
+    color: orange;
+    
+}
+header button{
+    height: 40px;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: transform 0.2s;
+}
+.Presentacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+}
+.presentacion-text{
+    width: 50%;
+}
+.presetacion-title{
+    width: 100%;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 65px;
+}
+.parrafo-text{
+    font-size: 18px;
+    line-height: 25px;
+    margin: 25px 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.presentacion-image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.presentacion-image img{
+    width: 60%;
+    height:600px;
+}
+.btn-presentacion button{
+    width: auto;
+    padding: 10px;
+    background-color: orange;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    border: none;
+    height: 35px;
+    margin: 30px 0 ;
+    transition: transform 0.2s;
+}
+button:hover{
+    transform: scale(1.05);
+}
+button:active{
+    transform: scale(0.9);
+}
