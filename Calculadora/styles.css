@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 703px;
+    background-color: rgba(80, 80, 154, 0.805);
+}
+main{
+    width: 20%;
+    height: 450px;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+.pantalla{
+    padding: 10px;
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: aliceblue;
+    font-size: 30px;
+    border-radius: 10px;
+}
+.botones{
+    width: 96%;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.boton4{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.boton4 button{
+    width: 65px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 0 2px rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+.operacion{
+    color: orange;
+    font-size: 50px;
+}
+.boton4 button:active{
+    transform: scale(0.9);
+}
