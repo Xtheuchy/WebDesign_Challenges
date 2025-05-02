@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #131111;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    width: 18lh;
+    height: 25lh;
+    position: relative;
+    background-color: #232323;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+@property --angulo{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.card::before{
+    content: "";
+    width: 18.5lh;
+    height: 25.5lh;
+    position: absolute;
+    background-image: conic-gradient(
+        from var(--angulo),
+        #ffff00,#00ff00,#0000ff,#ff0000
+    );
+    animation: girar 2s linear infinite;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 18px;
+}
+
+@keyframes girar{
+    0%{
+        --angulo:0deg;
+    }
+    100%{
+        --angulo:360deg;
+    }
+}
+.image{
+    width: 8lh;
+    height: 8lh;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.Presentation{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    color: white;
+}
+.name{
+    font-size: 35px;
+}
+.info{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 17px;
+}
+button{
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 28px;
+    border: 1px solid rgb(0, 0, 0);
+    color: white;
+    background-color: #131111;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: .5s;
+}
+button:hover{
+    background-color: aqua;
+    color: #131111;
+}

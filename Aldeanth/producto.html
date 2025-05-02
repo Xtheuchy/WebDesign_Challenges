@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <main class="contenedor-producto">
+        <h1 class="titulo-productos">
+            <i class="fa-solid fa-box"></i> Productos Disponibles
+        </h1>
+        <div class="Buscar-add">
+            <button onclick="document.getElementById('popup').showModal()">➕ AGREGAR PRODUCTO</button>
+        </div>
+        <dialog id="popup" class="dialog-producto">
+            <form class="agregar-producto" action="#">
+                <h1>Registro de Productos</h1>
+                <label>Nombre Del Producto : </label>
+                <input type="text" required placeholder="Nombre del producto"><br>
+                <label>Precio : </label>
+                <input type="text" required placeholder="S/. 00"><br>
+                <label>Imagen : </label>
+                <input type="text" required placeholder="http://www.example.com/imagen.jpg"><br>
+                <button>Registrar</button>
+            </form>
+            <button class="close" onclick="document.getElementById('popup').close()">Cerrar</button>
+        </dialog>
+        <article class="contenedor-cuadro-producto">
+            <section class="card-producto">
+                <picture>
+                    <img src="Imagen/Logo.webp" alt="">
+                </picture>
+                <div class="nombre-producto">
+                    <h1>Producto 1</h1>
+                    <p>S/. 20.50</p>
+                </div>
+                <div class="Opciones-producto">
+                    <li><a  href="editar.html">Editar</a></li>
+                    <li><a href="#">Eliminar</a></li>
+                </div>
+            </section>
+        </article>
+    </main>
+</body>
+
+</html>

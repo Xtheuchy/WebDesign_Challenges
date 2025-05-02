@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <main class="contenedor-login">
+        <section class="animate__animated animate__fadeInDown login" id="loginSection">
+            <div class="icon">
+                <i class="fa-solid fa-square-pen"></i>
+            </div>
+            <h1 class="title">Iniciar Sesión</h1>
+            <form class="form-login" action="#" method="post">
+                <section class="usuario">
+                    <i class="fa-solid fa-user"></i><input type="text" name="nombre" placeholder="Nombre de Usuario" required>
+                </section>
+                <section class="password">
+                    <i class="fa-solid fa-lock"></i><input type="password" name="password" placeholder="Contraseña" required>
+                </section>
+                <button type="submit">Iniciar Sesión</button>
+                <hr>
+                <p class="registrar">Aún no tienes cuenta ? <a href="#" id="registerLink">Registrate aquí</a></p>
+            </form>
+        </section>
+        <section class="animate__animated animate__fadeInDown Registrar" id="RegistrarSection">
+            <div class="icon">
+                <i class="fa-solid fa-square-pen"></i>
+            </div>
+            <h1 class="title">Iniciar Registro</h1>
+            <form class="form-login" action="#" method="post">
+                <section class="usuario">
+                    <i class="fa-solid fa-user"></i><input type="text" name="usuario" placeholder="Nombre de Usuario" required>
+                </section>
+                <section class="NombreUsuario">
+                    <i class="fa-solid fa-user"></i><input type="text" name="nombre" placeholder="Nombre completo" required>
+                </section>
+                <section class="CorreoUsuario">
+                    <i class="fa-solid fa-envelope"></i></i><input type="email" name="correo" placeholder="Correo" required>
+                </section>
+                <section class="password">
+                    <i class="fa-solid fa-lock"></i><input type="password" name="password" placeholder="Contraseña" required>
+                </section>
+                <button type="submit">Registrarse</button>
+                <hr>
+                <p class="registrar">Ya tienes cuenta ? <a href="#" id="loginLink">Inicia sesión aquí</a></p>
+            </form>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

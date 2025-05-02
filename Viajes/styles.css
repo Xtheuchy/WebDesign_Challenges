@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+main{
+    background-image: url(assets/beach-1846009.jpg);
+    height: 650px;
+    background-position: right;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.168);
+    background-blend-mode: overlay;
+}
+nav{
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+li{
+    list-style: none;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    font-size: 14px;
+}
+.bandera{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+select{
+    width: 100px;
+    border: none;
+    cursor: pointer;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+section{
+    display: flex;
+}
+section div{
+    width: 50%;
+}
+.contenido{
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 150px;
+    gap: 20px;
+}
+.contenido h1{
+    font-size: 65px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+.contenido p:first-child{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+.contenido p{
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.contenido button{
+    width: 150px;
+    height: 45px;
+    background-color: rgb(166, 82, 250);
+    border: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.chat{
+    height: 650px;
+}
+.chat button{
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    width: 80px;
+    border: none;
+    background-color: rgba(194, 52, 255, 0.292);
+    height: 80px;
+    font-size: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.chat button i{
+    color: white;
+}

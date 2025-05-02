@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+li,a{
+    list-style: none;
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+.contenedor-principal{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+.aside{
+    background-color: rgb(6, 6, 84);
+    height: 100vh;
+    padding: 0 0.5%;
+    width: 19%;
+}
+.title{
+    font-size: 60px;
+    text-align: center;
+    color: #fff;
+}
+.navegacion{
+    margin-top: 30px;
+}
+.navegacion ul{
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.navegacion ul li{
+    background-color: rgb(0, 106, 255);
+    border-radius: 5px;
+}
+.navegacion ul li a{
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    padding: 15px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: ease-in-out .5s;
+}
+.navegacion ul li a:hover{
+    color: #fcc04f;
+}
+.navegacion ul li a i{
+    padding: 0 0 0 5px;
+}
+.contenido{
+    padding: 10px;
+    width: 80%;
+}
+.contenido h1{
+    font-size: 40px;
+}
+.search{
+    margin-top: 30px;
+    padding: 7px;
+    width: 250px;
+    border-radius: 10px;
+}
+.contenedor-tareas{
+    margin-top: 30px;
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 530px;
+    overflow-y: auto;
+}
+.contenedor-tareas::-webkit-scrollbar{
+    scrollbar-width: none;
+}
+.card{
+    min-width: 385px;
+    max-width: 385px;
+    min-height: 250px;
+    max-height: 250px;
+    background-color: #ff0000;
+}
+.button{
+    width: 100%;
+    position: relative;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.button button{
+    position: absolute;
+    right: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    transition: .2s;
+}
+.button button:hover{
+    transform: scale(1.02);
+    
+}
+.button button:active{
+    transform: scale(1);
+}
+.gestion-tareas{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.tabla-tarea{
+    height: 580px;
+    overflow-y: auto;
+}
+.tabla-tarea::-webkit-scrollbar{
+    scrollbar-width: none;
+}
+.tabla-tarea table thead{
+    background-color: #1c0aab;
+    color: #fff;
+}
+.tabla-tarea table tbody{
+    background-color: #d8d8d8;
+}
+.tabla-tarea table tbody tr:hover{
+    background-color: #aae7ff;
+}
+.tabla-tarea table thead tr th{
+    width: 200px;
+    padding: 10px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.tabla-tarea table tbody tr td{
+    width: 200px;
+    padding: 5px 0;
+    text-align: center;
+}
+.tabla-tarea table tbody tr td button{
+    padding: 5px;
+    width: 90px;
+    color: #fff;
+    border: none;
+}
