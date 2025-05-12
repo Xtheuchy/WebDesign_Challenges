@@ -9,38 +9,38 @@
 <body>
     <main>
         <header class="pantalla" id="display">
-            <strong>0</strong>
+            
         </header>
         <section class="botones">
             <div class="boton4">
                 <button onclick="eliminar(0)"><strong>AC</strong></button>
                 <button><strong>+/-</strong></button>
                 <button><strong>%</strong></button>
-                <button class="operacion"><strong>÷</strong></button>
+                <button class="operacion" onclick="seleccionarOperacion('÷')"><strong>÷</strong></button>
             </div>
             <div class="boton4">
                 <button  onclick="updateDisplay(1)"><strong>1</strong></button>
                 <button  onclick="updateDisplay(2)"><strong>2</strong></button>
                 <button  onclick="updateDisplay(3)"><strong>3</strong></button>
-                <button class="operacion"><strong>x</strong></button>
+                <button class="operacion" onclick="seleccionarOperacion('x')"><strong>x</strong></button>
             </div>
             <div class="boton4">
                 <button  onclick="updateDisplay(4)"><strong>4</strong></button>
                 <button  onclick="updateDisplay(5)"><strong>5</strong></button>
                 <button  onclick="updateDisplay(6)"><strong>6</strong></button>
-                <button class="operacion" onclick="operacion()"><strong>-</strong></button>
+                <button class="operacion" onclick="seleccionarOperacion('-')"><strong>-</strong></button>
             </div>
             <div class="boton4">
                 <button  onclick="updateDisplay(7)"><strong>7</strong></button>
                 <button  onclick="updateDisplay(8)"><strong>8</strong></button>
                 <button  onclick="updateDisplay(9)"><strong>9</strong></button>
-                <button class="operacion" onclick="operacion()"><strong>+</strong></button>
+                <button class="operacion" onclick="seleccionarOperacion('+')"><strong>+</strong></button>
             </div>
             <div class="boton4">
                 <button onclick="updateDisplay(0)"><strong>0</strong></button>
                 <button><strong>x2</strong></button>
                 <button><strong>.</strong></button>
-                <button class="operacion"><strong>=</strong></button>
+                <button class="operacion" onclick="calcularResultado()"><strong>=</strong></button>
             </div>
         </section>
     </main>

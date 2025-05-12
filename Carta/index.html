@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carta Animada</title>
+  <style>
+    body {
+      margin: 0;
+      background: #fff0f5;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .carta-container {
+      width: 300px;
+      height: 200px;
+      position: relative;
+      perspective: 1000px;
+    }
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    .sobre {
+      width: 100%;
+      height: 100%;
+      background: #f06292;
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .tapa {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #ec407a;
+      clip-path: polygon(0 0, 100% 0, 50% 50%);
+      transform-origin: top;
+      transition: transform 0.6s;
+      z-index: 2;
+    }
+
+    .carta {
+      position: absolute;
+      top: 100%;
+      left: 10%;
+      width: 80%;
+      height: 120px;
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-sizing: border-box;
+      text-align: center;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      transition: top 0.6s ease;
+      z-index: 1;
+    }
+
+    .carta h3 {
+      margin: 0;
+      color: #e91e63;
+    }
+
+    .carta p {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #444;
+    }
+
+    label {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      z-index: 3;
+    }
+
+    input[type="checkbox"]:checked ~ .sobre .tapa {
+      transform: rotateX(-180deg);
+    }
+
+    input[type="checkbox"]:checked ~ .sobre .carta {
+      top: 20%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="carta-container">
+    <input type="checkbox" id="abrir">
+    <label for="abrir"></label>
+
+    <div class="sobre">
+      <div class="tapa"></div>
+      <div class="carta">
+        <h3>Querida persona</h3>
+        <p>Esta carta contiene un pedacito de mi corazón. Gracias por estar en mi vida.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

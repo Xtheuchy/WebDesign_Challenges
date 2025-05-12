@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+}
+.card{
+    width: 18lh;
+    height: 15lh;
+    position: relative;
+    background-color: pink;
+    border: 2px solid yellow dotted;
+}
+.card::before{
+  content: "";
+  position: absolute;
+  width: 18lh;
+  height: 15lh;
+  background-color: #ff002b;
+  clip-path: polygon(50% 50%, 0 0, 100% 0);
+}
