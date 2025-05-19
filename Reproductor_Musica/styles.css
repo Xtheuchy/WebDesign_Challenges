@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100lvb;
+    display: grid;
+    place-content: center;
+    background-color: #010626;
+}
+.repro-container{
+    padding: 25px;
+    width: 400px;
+    height: 550px;
+    background-color:#0d155a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 15px;
+}
+@property --angulo{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+    
+}
+.repro-container::before{
+    content: '';
+    position: absolute;
+    width: 410px;
+    height: 560px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    background-image: conic-gradient(
+        from var(--angulo),
+        /*Colores*/        
+        rgb(183, 0, 183),rgb(0, 17, 255)
+    );
+    animation: girar 2s linear infinite;
+    filter: blur(1rem);
+}
+@keyframes girar{
+    0%{
+        --angulo:0deg
+    }
+    100%{
+        --angulo:360deg
+    }
+}
+.img-container{
+    width: 240px;
+    height: 240px;
+    background:linear-gradient(to bottom, rgb(248, 60, 255),rgb(0, 0, 255));
+    border-radius: 20px;
+}
+.img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.info-music{
+    margin: 20px 0;
+    color: white;
+    text-align: center;
+}
+.Title-music{
+    font-size: 35px;
+}
+.name-autor{
+    color: rgb(0, 221, 255);
+    margin-top:5px;
+    font-size: 18px;
+}
+.action-repro{
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    gap: 40px;
+    color: white;
+    font-size: 30px;
+}
+.action-repro .action{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    background-color: rgb(0, 8, 84);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+     box-shadow:
+        0 0 5px #00aeff,
+        0 0 10px #00eeff,
+        0 0 20px #26fffb,
+        0 0 40px #1d74ff;
+}
+
+.contenedor-barra {
+    width: 80%;
+    height: 10px;
+    background-color: #222;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #0ff;
+    margin-top: 30px;
+}
+
+.barra-progreso {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #0ff, #0f0, #f0f);
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
+#barra{
+    width: 50%;
+}
+.time{
+    color: rgb(209, 209, 209);
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
